@@ -42,7 +42,7 @@ io.on("connection", (socket) => {
         room:user.room,
         users:getUsersInRoom(user.room)
       })
-    callback();
+    callback()
   });
 
   socket.on("nextChat", (message, callback) => {
